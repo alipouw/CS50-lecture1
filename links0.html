@@ -3,7 +3,32 @@
   <head>
     <title>Hello</title>
   </head>
-  <<body>
-    <<a href="https://google.com">Click here!</a>
+  <body>
+    <a href="https://google.com">Click here!</a>
+    <form>
+      <div>
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="password" placeholder="Password">
+      </div>
+
+      <div>
+        Favorite colour?
+        <input type="radio" name="colour" value="red"> Red
+        <input type="radio" name="colour" value="green"> Green
+        <input type="radio" name="colour" value="blue"> Blue
+        <input type="radio" name="colour" value="other"> Other
+      </div>
+
+      <div>
+        <input name="country" list="countries" placeholder="Country">
+        <datalist id="countries">
+          <option value="Afganistan">
+          <option value="Albania">
+          <option value="Canada">
+          <option value="United States">
+        </datalist>
+      </div>
+
+    </form>
   </body>
 </html>
